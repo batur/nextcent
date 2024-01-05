@@ -1,8 +1,15 @@
 import { type NextPage } from 'next';
 
 import Body from '@components/Body';
+import Footer from '@components/Footer';
 import Header from '@components/Header';
 import Hero from '@components/Hero';
+
+// TODO: Add Footer
+// TODO: Fix body section style
+// TODO: Pixel Perfect
+// TODO: Responsive
+// TODO: JSON data
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +17,7 @@ const Home: NextPage = () => {
       <Header />
       <Hero />
       <Body />
+      <Footer />
     </>
   );
 };
