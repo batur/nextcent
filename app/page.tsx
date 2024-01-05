@@ -1,7 +1,15 @@
-import Header from '@components/Header';
+import { type NextPage } from 'next';
 
-const Home = () => {
-  return <Header />;
+import Header from '@components/Header';
+import Hero from '@components/Hero';
+
+const Home: NextPage = () => {
+  return (
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
 };
 
 export default Home;
