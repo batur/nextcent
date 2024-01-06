@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import LOGO from '@assets/svgs/Logo.svg';
+import LOGO_WHITE from '@assets/svgs/Logo_White.svg';
 import { Button } from '@components/ui/button';
 
 const DATA = {
@@ -71,7 +71,7 @@ const SectionTwo: React.FC = () => {
     <footer className='w-full bg-brand-secondary text-white'>
       <div className='container mx-auto flex flex-col-reverse items-center justify-between gap-31.5 px-4 py-16 md:px-36.5 lg:flex-row'>
         <div className='flex grow flex-col items-start justify-start gap-10 pb-2'>
-          <Image src={LOGO} alt='Nexcent Logo' width={191} height={30} />
+          <Image src={LOGO_WHITE} alt='Nexcent Logo' width={191} height={30} />
           <div className='flex flex-col gap-2'>
             <p className='text-sm'>{DATA.tag.title}</p>
             <p className='text-sm'>{DATA.tag.description}</p>
