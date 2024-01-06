@@ -5,10 +5,10 @@ import SectionTwo from './SectionTwo';
 
 const Footer: React.FC = () => {
   return (
-    <footer>
+    <section className='w-full'>
       <SectionOne />
       <SectionTwo />
-    </footer>
+    </section>
   );
 };
 

@@ -3,23 +3,29 @@ import React from 'react';
 import Image from 'next/image';
 
 import LOGO from '@assets/svgs/Logo.svg';
+import { Button } from '@components/ui/button';
 
 const SectionTwo: React.FC = () => {
   return (
-    <footer className='bg-[#111827] text-white'>
-      <div className='mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8'>
-        <div className='grid grid-cols-1 gap-8 md:grid-cols-4'>
-          <div>
-            <Image src={LOGO} alt='Nexcent Logo' width={191} height={30} />
-            <p className='mb-4 text-sm'>
-              Copyright © 2020 Nexcent ltd.
-              <br />
-              All rights reserved
-            </p>
+    <footer className='container mx-auto w-full px-[145px] py-16'>
+      <div className='flex flex-row items-center justify-between gap-[125px]'>
+        <div className='flex grow flex-col items-start justify-start gap-10'>
+          <Image src={LOGO} alt='Nexcent Logo' width={191} height={30} />
+          <div className='flex flex-col gap-2'>
+            <p className='text-sm'>Copyright © 2020 Nexcent ltd.</p>
+            <p className='text-sm'>All rights reserved</p>
           </div>
+          <div className='flex gap-4'>
+            <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
+            <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
+            <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
+            <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
+          </div>
+        </div>
+        <div className='flex flex-auto flex-row items-start justify-between gap-[30px] pl-6'>
           <div>
-            <h3 className='mb-4 text-sm font-semibold'>Company</h3>
-            <ul className='space-y-3 text-sm'>
+            <h5 className='mb-6 text-xl font-semibold leading-7'>Company</h5>
+            <ul className='flex flex-col gap-3 text-sm'>
               <li>
                 <a className='hover:text-gray-300' href='#'>
                   About us
@@ -47,9 +53,9 @@ const SectionTwo: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className='mb-4 text-sm font-semibold'>Support</h3>
-            <ul className='space-y-3 text-sm'>
+          <div className=''>
+            <h5 className='mb-6 text-xl font-semibold leading-7'>Support</h5>
+            <ul className='flex flex-col gap-3 text-sm'>
               <li>
                 <a className='hover:text-gray-300' href='#'>
                   Help center
@@ -77,8 +83,8 @@ const SectionTwo: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className='mb-4 text-sm font-semibold'>Stay up to date</h3>
+          <div className='w-[255px]'>
+            <h5 className='mb-6 text-xl font-semibold leading-7'>Stay up to date</h5>
             <form className='flex'>
               <input
                 className='w-full rounded-l-md border border-gray-600 bg-transparent px-4 py-2 text-sm placeholder:text-gray-400 focus:border-gray-300 focus:outline-none'

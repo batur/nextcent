@@ -30,7 +30,7 @@ const DATA = [
 
 const SectionTwo = (): JSX.Element => {
   return (
-    <section className='mb-64 flex w-full grow flex-col items-center justify-start gap-4'>
+    <section className='flex w-full grow flex-col items-center justify-start gap-4'>
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
         <p className='text-4xl font-semibold leading-[44px]'>Caring is the new marketing</p>
         <p className='text-clip lg:w-[628px]'>
