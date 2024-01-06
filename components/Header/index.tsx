@@ -49,7 +49,7 @@ const DATA = {
 
 const Header: React.FC = () => {
   return (
-    <nav className='container sticky mx-auto mt-1 flex justify-center px-10 py-[18px]'>
+    <nav className='container sticky  mx-auto mt-1 flex justify-center px-10 py-[18px]'>
       <div className='flex w-full items-center justify-between px-8'>
         <div className='flex grow justify-start pl-3'>
           <Image src={DATA.logo.path} alt={DATA.logo.alt} width={155} height={24} />

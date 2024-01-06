@@ -5,7 +5,7 @@ import SectionTwo from './SectionTwo';
 
 const Body: React.FC = () => {
   return (
-    <section className='relative inline-flex flex-col items-start justify-center gap-[48px]'>
+    <section className='container mx-auto flex flex-col items-center justify-center gap-12'>
       <SectionOne />
       <SectionTwo />
     </section>

@@ -10,6 +10,8 @@ import Hero from '@components/Hero';
 // TODO: Responsive
 // TODO: JSON data
 // TODO: Convert all arbitarty values to tailwindcss variables
+// TODO: Check theme colors
+// TODO: container mx-144px
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +19,7 @@ const Home: NextPage = () => {
       <Header />
       <Hero />
       <Body />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -7,19 +7,13 @@ import { Button } from '@components/ui/button';
 
 const SectionOne = (): JSX.Element => {
   return (
-    <div className='relative inline-flex items-start'>
-      <div className='relative flex w-[1440px] items-center justify-between px-[144px] py-0'>
-        <div className='relative h-[433.4px] w-[441.53px]'>
-          <div className='relative h-[434px] w-[442px]'>
-            <Image src={CALENDAR_SVG} alt='Illustration' width={442} height={434} />
-          </div>
-        </div>
-        <div className='relative flex w-[661px] flex-col items-start gap-[32px]'>
-          <div className='relative flex w-[601px] flex-[0_0_auto] flex-col items-start gap-[16px]'>
-            <p className='font-heading-headline-2 text-neutraldgrey relative mt-[-1.00px] self-stretch text-[length:var(--heading-headline-2-font-size)] font-[number:var(--heading-headline-2-font-weight)] leading-[var(--heading-headline-2-line-height)] tracking-[var(--heading-headline-2-letter-spacing)] [font-style:var(--heading-headline-2-font-style)]'>
-              How to design your site footer like we did
-            </p>
-            <p className='font-body-regular-body-3 text-neutralgrey relative self-stretch text-[length:var(--body-regular-body-3-font-size)] font-[number:var(--body-regular-body-3-font-weight)] leading-[var(--body-regular-body-3-line-height)] tracking-[var(--body-regular-body-3-letter-spacing)] [font-style:var(--body-regular-body-3-font-style)]'>
+    <article className='flex w-full min-w-full items-start'>
+      <div className='flex flex-1 grow items-center justify-between gap-[50px]'>
+        <Image src={CALENDAR_SVG} alt='Illustration' width={441} height={433} />
+        <div className='flex flex-1 grow flex-col items-start gap-9'>
+          <div className='flex shrink-0 flex-col items-center gap-4 lg:max-w-[601px]'>
+            <h3 className='text-4xl font-semibold leading-[44px]'>How to design your site footer like we did</h3>
+            <p className='text-ellipsis text-sm leading-5'>
               Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at
               scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula
               leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi
@@ -27,10 +21,12 @@ const SectionOne = (): JSX.Element => {
               consectetur faucibus ipsum id gravida.
             </p>
           </div>
-          <Button>Learn More</Button>
+          <Button className='rounded-sm py-[26px]'>
+            <span className='px-4 text-base leading-5'>Learn More</span>
+          </Button>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
