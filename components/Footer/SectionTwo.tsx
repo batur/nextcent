@@ -8,7 +8,7 @@ import { Button } from '@components/ui/button';
 const SectionTwo: React.FC = () => {
   return (
     <footer className='container mx-auto w-full px-36.5 py-16'>
-      <div className='flex flex-row items-center justify-between gap-31.5'>
+      <div className='flex flex-col-reverse items-center justify-between gap-31.5 lg:flex-row'>
         <div className='flex grow flex-col items-start justify-start gap-10 pb-2'>
           <Image src={LOGO} alt='Nexcent Logo' width={191} height={30} />
           <div className='flex flex-col gap-2'>
@@ -22,8 +22,8 @@ const SectionTwo: React.FC = () => {
             <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
           </div>
         </div>
-        <div className='flex flex-auto flex-row items-start justify-between gap-7.5 pl-6'>
-          <div>
+        <div className='flex w-full flex-auto flex-row-reverse flex-wrap items-center justify-between gap-y-5 lg:flex-row lg:items-start lg:gap-7.5 lg:pl-6'>
+          <div className='order-2 flex w-1/2 flex-col items-center lg:order-1 lg:w-full'>
             <h5 className='mb-6 text-xl font-semibold leading-7'>Company</h5>
             <ul className='flex flex-col gap-3 text-sm'>
               <li>
@@ -53,7 +53,7 @@ const SectionTwo: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className=''>
+          <div className='order-3 flex w-1/2 flex-col items-center lg:order-2 lg:w-full'>
             <h5 className='mb-6 text-xl font-semibold leading-7'>Support</h5>
             <ul className='flex flex-col gap-3 text-sm'>
               <li>
@@ -83,7 +83,7 @@ const SectionTwo: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className='w-63.5'>
+          <div className='order-1 w-full lg:order-3 lg:w-63.5'>
             <h5 className='mb-6 text-xl font-semibold leading-7'>Stay up to date</h5>
             <form className='flex'>
               <input

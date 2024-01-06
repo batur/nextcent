@@ -8,7 +8,7 @@ import { Button } from '@components/ui/button';
 const SectionOne = (): JSX.Element => {
   return (
     <article className='flex w-full min-w-full items-start'>
-      <div className='flex flex-1 grow items-center justify-between gap-12.5'>
+      <div className='flex flex-1 grow flex-col items-center justify-between gap-12.5 lg:flex-row'>
         <Image src={CALENDAR_SVG} alt='Illustration' width={441} height={433} />
         <div className='flex flex-1 grow flex-col items-start gap-9'>
           <div className='flex shrink-0 flex-col items-center gap-4 lg:max-w-150'>

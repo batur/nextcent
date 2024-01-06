@@ -38,14 +38,14 @@ const SectionTwo = (): JSX.Element => {
           community, read about how our community are increasing their membership income and lot&#39;s more.
         </p>
       </div>
-      <div className='flex w-full grow items-start justify-start gap-6 py-0'>
+      <div className='flex w-full grow flex-col items-center justify-start py-0 md:gap-32 lg:flex-row lg:items-start lg:gap-6'>
         {DATA.map((data) => (
           <div key={data.title} className='relative flex flex-1 grow flex-row'>
             <Image src={data.image} alt='Image' width={368} height={286} className='aspect-auto' />
-            <div className='absolute -bottom-20 left-6 flex aspect-auto flex-col items-center gap-4 rounded-md bg-neutral-silver  p-4 shadow-md'>
-              <h3 className='text-center text-xl font-semibold leading-7 text-neutral-darkGrey lg:max-w-71.5'>{data.title}</h3>
+            <div className='absolute -bottom-20 mx-6 flex aspect-auto flex-col items-center gap-4 rounded-md bg-neutral-silver  p-4 shadow-md'>
+              <h3 className='text-center text-4 font-semibold leading-7 text-neutral-darkGrey lg:max-w-71.5 lg:text-xl'>{data.title}</h3>
               <Button variant='ghost' className='h-11 w-full'>
-                <span className='text-xl font-semibold leading-7 text-brand-primary'>{'Readmore ->'}</span>
+                <span className='text-4 font-semibold leading-7 text-brand-primary lg:text-xl'>{'Readmore ->'}</span>
               </Button>
             </div>
           </div>

@@ -7,7 +7,6 @@ import Hero from '@components/Hero';
 
 // TODO: Responsive
 // TODO: JSON data
-// TODO: Check theme colors
 // TODO: Input component
 
 const Home: NextPage = () => {

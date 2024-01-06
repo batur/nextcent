@@ -50,8 +50,8 @@ const DATA = {
 const Header: React.FC = () => {
   return (
     <nav className='container sticky mx-auto mt-1 flex justify-center px-10 py-4.5'>
-      <div className='flex w-full items-center justify-between px-8'>
-        <div className='flex grow justify-start pl-3'>
+      <div className='flex w-full items-center justify-between lg:px-8'>
+        <div className='flex grow justify-start lg:pl-3'>
           <Image src={DATA.logo.path} alt={DATA.logo.alt} width={155} height={24} />
         </div>
         <div className='hidden gap-12.5 pb-0.5 pl-10 lg:flex'>
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
             </Link>
           ))}
         </div>
-        <div className='flex grow justify-end gap-3.5 pr-7'>
+        <div className='flex grow justify-end gap-3.5 lg:pr-7'>
           {DATA.authLinks.map((link) => (
             <Link href={link.path} key={link.label}>
               <Button className='px-5' key={link.label} variant={link.label === 'Sign up' ? 'default' : 'ghost'}>
