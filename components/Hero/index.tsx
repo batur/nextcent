@@ -10,20 +10,20 @@ const HEADLINE = 'Lessons and insights <br/> <span>from 8 years</span>';
 
 const Home: React.FC = () => {
   return (
-    <div className='container mx-auto flex w-full grow flex-col-reverse items-center justify-around gap-26 py-6 md:py-12 lg:flex-row lg:py-24'>
+    <div className='container mx-auto flex w-full grow flex-col-reverse items-center justify-around gap-26 bg-neutral-silver px-4 py-6 md:py-12 lg:flex-row lg:py-24'>
       <div className='flex flex-col items-start gap-8'>
         <div className='flex w-full flex-col items-start gap-4 pt-1'>
           <h1
-            className='hero__title text-nowrap font-semibold text-neutral-darkGrey md:text-14 lg:text-16 lg:leading-19'
+            className='hero__title text-nowrap text-8 font-semibold text-neutral-darkGrey md:text-14 lg:text-16 lg:leading-19'
             dangerouslySetInnerHTML={{ __html: HEADLINE }}
           />
-          <p className='text-3 leading-6 text-neutral-grey lg:text-4'>
+          <p className='text-3.5 leading-6 text-neutral-grey lg:text-4'>
             Where to grow your business as a photographer: site or social media?
           </p>
         </div>
         <Link href='#'>
-          <Button className='rounded-sm py-6.5'>
-            <span className='px-4 text-4 font-medium leading-6'>Register</span>
+          <Button className='rounded-sm md:py-6.5'>
+            <span className='text-3 font-medium leading-6 md:px-4 lg:text-4'>Register</span>
           </Button>
         </Link>
       </div>

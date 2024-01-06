@@ -9,7 +9,7 @@ const SectionOne = (): JSX.Element => {
   return (
     <article className='flex w-full min-w-full items-start'>
       <div className='flex flex-1 grow flex-col items-center justify-between gap-12.5 lg:flex-row'>
-        <Image src={CALENDAR_SVG} alt='Illustration' width={441} height={433} />
+        <Image src={CALENDAR_SVG} alt='Illustration' width={441} height={433} className='h-auto w-full object-cover' />
         <div className='flex flex-1 grow flex-col items-start gap-9'>
           <div className='flex shrink-0 flex-col items-center gap-4 lg:max-w-150'>
             <h3 className='text-4xl font-semibold leading-11 text-neutral-darkGrey'>How to design your site footer like we did</h3>
@@ -21,8 +21,8 @@ const SectionOne = (): JSX.Element => {
               consectetur faucibus ipsum id gravida.
             </p>
           </div>
-          <Button className='rounded-sm py-6.5'>
-            <span className='px-4 text-base leading-5'>Learn More</span>
+          <Button className='rounded-sm md:py-6.5'>
+            <span className='text-3 leading-5 md:px-4 md:text-base'>Learn More</span>
           </Button>
         </div>
       </div>

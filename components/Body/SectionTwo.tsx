@@ -31,14 +31,14 @@ const DATA = [
 const SectionTwo = (): JSX.Element => {
   return (
     <section className='flex w-full grow flex-col items-center justify-start gap-4'>
-      <div className='flex flex-col items-center justify-center gap-2 text-center'>
+      <div className='flex flex-col items-center justify-center gap-2 md:text-center'>
         <h3 className='text-4xl font-semibold leading-11 text-neutral-darkGrey'>Caring is the new marketing</h3>
         <p className='text-clip text-neutral-grey lg:w-157'>
           The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who&#39;s joining the
           community, read about how our community are increasing their membership income and lot&#39;s more.
         </p>
       </div>
-      <div className='flex w-full grow flex-col items-center justify-start py-0 md:gap-32 lg:flex-row lg:items-start lg:gap-6'>
+      <div className='flex w-full grow flex-col items-center justify-start gap-34 py-0 md:gap-32 lg:flex-row lg:items-start lg:gap-6'>
         {DATA.map((data) => (
           <div key={data.title} className='relative flex flex-1 grow flex-row'>
             <Image src={data.image} alt='Image' width={368} height={286} className='aspect-auto' />

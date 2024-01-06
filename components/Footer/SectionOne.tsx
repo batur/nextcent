@@ -9,7 +9,7 @@ const SectionOne = (): JSX.Element => {
         Pellentesque suscipit fringilla libero eu.
       </h4>
       <Button className='rounded-sm lg:h-13'>
-        <span className='px-2.5 leading-6'>{'Get a Demo ->'}</span>
+        <span className='md:px-2.5 md:leading-6'>{'Get a Demo ->'}</span>
       </Button>
     </article>
   );

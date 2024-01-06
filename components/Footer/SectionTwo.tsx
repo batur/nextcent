@@ -7,7 +7,7 @@ import { Button } from '@components/ui/button';
 
 const SectionTwo: React.FC = () => {
   return (
-    <footer className='container mx-auto w-full px-36.5 py-16'>
+    <footer className='container mx-auto w-full px-4 py-16 md:px-36.5'>
       <div className='flex flex-col-reverse items-center justify-between gap-31.5 lg:flex-row'>
         <div className='flex grow flex-col items-start justify-start gap-10 pb-2'>
           <Image src={LOGO} alt='Nexcent Logo' width={191} height={30} />
@@ -83,8 +83,8 @@ const SectionTwo: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className='order-1 w-full lg:order-3 lg:w-63.5'>
-            <h5 className='mb-6 text-xl font-semibold leading-7'>Stay up to date</h5>
+          <div className='order-1 mb-12 w-full md:mb-0 lg:order-3 lg:w-63.5'>
+            <h5 className='mb-6 text-center text-xl font-semibold leading-7 md:text-left'>Stay up to date</h5>
             <form className='flex'>
               <input
                 className='w-full rounded-l-md border border-gray-600 bg-transparent px-4 py-2 text-sm placeholder:text-gray-400 focus:border-gray-300 focus:outline-none'
