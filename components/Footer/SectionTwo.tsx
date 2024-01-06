@@ -68,8 +68,8 @@ const DATA = {
 
 const SectionTwo: React.FC = () => {
   return (
-    <footer className='container mx-auto w-full px-4 py-16 md:px-36.5'>
-      <div className='flex flex-col-reverse items-center justify-between gap-31.5 lg:flex-row'>
+    <footer className='w-full bg-brand-secondary text-white'>
+      <div className='container mx-auto flex flex-col-reverse items-center justify-between gap-31.5 px-4 py-16 md:px-36.5 lg:flex-row'>
         <div className='flex grow flex-col items-start justify-start gap-10 pb-2'>
           <Image src={LOGO} alt='Nexcent Logo' width={191} height={30} />
           <div className='flex flex-col gap-2'>
@@ -83,8 +83,8 @@ const SectionTwo: React.FC = () => {
             <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
           </div>
         </div>
-        <div className='flex w-full flex-auto flex-row-reverse flex-wrap items-center justify-between gap-y-5 lg:flex-row lg:items-start lg:gap-7.5 lg:pl-6'>
-          <div className='order-2 flex w-1/2 flex-col items-center lg:order-1 lg:w-full'>
+        <div className='flex w-full flex-auto flex-row-reverse flex-wrap items-center justify-between gap-y-5 lg:flex-row lg:flex-nowrap lg:items-start lg:gap-7.5 lg:pl-6'>
+          <div className='order-2 flex w-1/2 flex-col items-center lg:order-1'>
             <h5 className='mb-6 text-xl font-semibold leading-7'>{DATA.infoOne.title}</h5>
             <ul className='flex flex-col gap-3 text-sm'>
               {DATA.infoOne.bullets.map((bullet) => (
@@ -94,7 +94,7 @@ const SectionTwo: React.FC = () => {
               ))}
             </ul>
           </div>
-          <div className='order-3 flex w-1/2 flex-col items-center lg:order-2 lg:w-full'>
+          <div className='order-3 flex w-1/2 flex-col items-center lg:order-2'>
             <h5 className='mb-6 text-xl font-semibold leading-7'>{DATA.infoTwo.title}</h5>
             <ul className='flex flex-col gap-3 text-sm'>
               {DATA.infoTwo.bullets.map((bullet) => (
