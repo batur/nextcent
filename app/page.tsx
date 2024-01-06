@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <Header />
       <Hero />
       <Body />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
