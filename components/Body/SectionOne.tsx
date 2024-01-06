@@ -16,7 +16,7 @@ const SectionOne = (): JSX.Element => {
   return (
     <article className='flex w-full min-w-full items-start'>
       <div className='flex flex-1 grow flex-col items-center justify-between gap-12.5 lg:flex-row'>
-        <Image src={CALENDAR_SVG} alt='Illustration' width={441} height={433} className='h-auto w-full object-cover' />
+        <Image src={CALENDAR_SVG} alt='Illustration' width={441} height={433} className='md:h-full md:w-auto md:object-cover' />
         <div className='flex flex-1 grow flex-col items-start gap-9'>
           <div className='flex shrink-0 flex-col items-center gap-4 lg:max-w-150'>
             <h3 className='text-4xl font-semibold leading-11 text-neutral-darkGrey'>{DATA.title}</h3>

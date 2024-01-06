@@ -14,7 +14,7 @@ const DATA = {
 
 const Home: React.FC = () => {
   return (
-    <div className='container mx-auto flex w-full grow flex-col-reverse items-center justify-around gap-26 bg-neutral-silver px-4 py-6 md:py-12 lg:flex-row lg:py-24'>
+    <section className='container mx-auto flex w-full grow flex-col-reverse items-center justify-around gap-26 bg-neutral-silver px-4 py-6 md:py-12 lg:flex-row lg:px-31 lg:py-24'>
       <div className='flex flex-col items-start gap-8'>
         <div className='flex w-full flex-col items-start gap-4 pt-1'>
           <h1
@@ -29,8 +29,8 @@ const Home: React.FC = () => {
           </Button>
         </Link>
       </div>
-      <Image src={DATA.image} alt='Illustration' width={391} height={407} className='h-auto w-full object-cover lg:ml-1 lg:mt-1' />
-    </div>
+      <Image src={DATA.image} alt='Illustration' width={391} height={407} className='md:h-auto md:w-full md:object-cover lg:ml-1 lg:mt-1' />
+    </section>
   );
 };
 
