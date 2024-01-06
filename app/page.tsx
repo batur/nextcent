@@ -5,9 +5,8 @@ import Footer from '@components/Footer';
 import Header from '@components/Header';
 import Hero from '@components/Hero';
 
-// TODO: Responsive
-// TODO: JSON data
 // TODO: Input component
+// TODO: Icons
 
 const Home: NextPage = () => {
   return (
