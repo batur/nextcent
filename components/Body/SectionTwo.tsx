@@ -32,8 +32,8 @@ const SectionTwo = (): JSX.Element => {
   return (
     <section className='flex w-full grow flex-col items-center justify-start gap-4'>
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
-        <p className='text-4xl font-semibold leading-[44px]'>Caring is the new marketing</p>
-        <p className='text-clip lg:w-[628px]'>
+        <h3 className='text-4xl font-semibold leading-11 text-neutral-darkGrey'>Caring is the new marketing</h3>
+        <p className='text-clip text-neutral-grey lg:w-157'>
           The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who&#39;s joining the
           community, read about how our community are increasing their membership income and lot&#39;s more.
         </p>
@@ -42,9 +42,9 @@ const SectionTwo = (): JSX.Element => {
         {DATA.map((data) => (
           <div key={data.title} className='relative flex flex-1 grow flex-row'>
             <Image src={data.image} alt='Image' width={368} height={286} className='aspect-auto' />
-            <div className='absolute -bottom-20 left-6 flex aspect-auto flex-col items-center gap-4 rounded-md bg-white p-4 shadow-md'>
-              <h3 className='text-center text-xl font-semibold leading-7 lg:max-w-[285px]'>{data.title}</h3>
-              <Button variant='ghost' className='h-[44px] w-full'>
+            <div className='absolute -bottom-20 left-6 flex aspect-auto flex-col items-center gap-4 rounded-md bg-neutral-silver  p-4 shadow-md'>
+              <h3 className='text-center text-xl font-semibold leading-7 text-neutral-darkGrey lg:max-w-71.5'>{data.title}</h3>
+              <Button variant='ghost' className='h-11 w-full'>
                 <span className='text-xl font-semibold leading-7 text-brand-primary'>{'Readmore ->'}</span>
               </Button>
             </div>

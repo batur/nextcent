@@ -7,22 +7,22 @@ import { Button } from '@components/ui/button';
 
 const SectionTwo: React.FC = () => {
   return (
-    <footer className='container mx-auto w-full px-[145px] py-16'>
-      <div className='flex flex-row items-center justify-between gap-[125px]'>
-        <div className='flex grow flex-col items-start justify-start gap-10'>
+    <footer className='container mx-auto w-full px-36.5 py-16'>
+      <div className='flex flex-row items-center justify-between gap-31.5'>
+        <div className='flex grow flex-col items-start justify-start gap-10 pb-2'>
           <Image src={LOGO} alt='Nexcent Logo' width={191} height={30} />
           <div className='flex flex-col gap-2'>
             <p className='text-sm'>Copyright © 2020 Nexcent ltd.</p>
             <p className='text-sm'>All rights reserved</p>
           </div>
-          <div className='flex gap-4'>
+          <div className='flex gap-3.5'>
             <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
             <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
             <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
             <Button variant='outline' className='h-8 w-8 rounded-full'></Button>
           </div>
         </div>
-        <div className='flex flex-auto flex-row items-start justify-between gap-[30px] pl-6'>
+        <div className='flex flex-auto flex-row items-start justify-between gap-7.5 pl-6'>
           <div>
             <h5 className='mb-6 text-xl font-semibold leading-7'>Company</h5>
             <ul className='flex flex-col gap-3 text-sm'>
@@ -83,7 +83,7 @@ const SectionTwo: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className='w-[255px]'>
+          <div className='w-63.5'>
             <h5 className='mb-6 text-xl font-semibold leading-7'>Stay up to date</h5>
             <form className='flex'>
               <input

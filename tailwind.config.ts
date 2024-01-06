@@ -1,5 +1,31 @@
 import type { Config } from 'tailwindcss';
 
+const numbers = [...Array(600).keys()].map((number) => number / 2);
+
+const handleNumbers = (): Record<number, string> => {
+  let numberObject = {};
+
+  numbers.forEach((number) => {
+    numberObject = { ...numberObject, [number]: `${number / 4}rem` };
+  });
+
+  return { 0: '0', ...numberObject };
+};
+
+const sizes = handleNumbers();
+
+const withNegative = (object: Record<string, string>): Record<string, string> => {
+  let negatives = {};
+
+  Object.keys(object).forEach((key) => {
+    // eslint-disable-next-line no-prototype-builtins
+    if (object.hasOwnProperty(key)) {
+      negatives = { ...negatives, [`-${key}`]: `-${object[key]}` };
+    }
+  });
+
+  return { ...negatives, ...object };
+};
 const config = {
   darkMode: ['class'],
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
@@ -13,6 +39,21 @@ const config = {
       }
     },
     extend: {
+      margin: withNegative(sizes),
+      spacing: withNegative(sizes),
+      inset: withNegative(sizes),
+      lineHeight: sizes,
+      borderWidth: sizes,
+      padding: sizes,
+      width: sizes,
+      height: sizes,
+      maxWidth: sizes,
+      maxHeight: sizes,
+      minWidth: sizes,
+      minHeight: sizes,
+      fontSize: sizes,
+      letterSpacing: sizes,
+      gap: sizes,
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -50,6 +91,14 @@ const config = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
+        },
+        text: {
+          main: '#18191F'
+        },
+        neutral: {
+          silver: '#F5F7FA',
+          grey: '#717171',
+          darkGrey: '#4D4D4D'
         }
       },
       borderRadius: {
